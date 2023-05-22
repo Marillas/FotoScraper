@@ -12,10 +12,10 @@ Una vez que hayas completado todo eso, podrás crear tus propios filtros en el a
 - Firebase-admin: 6.1.0
 - Undetected-chromedriver: 3.4.6
 - Google Chrome: 113.0.5672.127
+- Windows 10: 21H2
 # Ordenador usado para hacer pruebas
 - GPU: Rx 5700
 - CPU: Ryzen 7 2700x
 - RAM: 16 GB
 - Resolución: 1920 x 1080
-- Sistema Operativo: Windows 10
 - Pantalla: 24 Pulgadas
