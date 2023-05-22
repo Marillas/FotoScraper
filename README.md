@@ -6,3 +6,16 @@ La aplicación es muy fácil de usar. Primero, debes completar los filtros que a
 Si el bot encuentra propiedades, puedes comenzar a "scrapear" y el programa te mostrará el tiempo estimado que tomará. Mientras extraes la información, todo se guardará en un archivo de Excel con el nombre que hayas especificado. Si deseas aprender cómo utilizar correctamente el bot, puedes ver nuestro video instructivo en este enlace: [Link al Video].
 
 Una vez que hayas completado todo eso, podrás crear tus propios filtros en el archivo de Excel generado por el bot.
+# Versiones usadas para el programa
+- Visual Studio Code: 1.78.2
+- PyQt6: 6.5.0
+- Firebase-admin: 6.1.0
+- Undetected-chromedriver: 3.4.6
+- Google Chrome: 113.0.5672.127
+# Ordenador usado para hacer pruebas
+- GPU: Rx 5700
+- CPU: Ryzen 7 2700x
+- RAM: 16 GB
+- Resolución: 1920 x 1080
+- Sistema Operativo: Windows 10
+- Pantalla: 24 Pulgadas
