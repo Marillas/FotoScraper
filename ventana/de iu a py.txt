@@ -1,0 +1,1 @@
+python -m PyQt6.uic.pyuic filtros.ui -o fotoscraper.py -x
