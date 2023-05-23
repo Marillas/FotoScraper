@@ -549,7 +549,7 @@ class Ui_FotoScraperFiltros(object):
     # Este metodo hace que copie el correo al portapapeles  
     def portapapeles(self):
         self.label_portapapeles.setHidden(False)
-        correo = "idealscraper@gmail.com"
+        correo = "fotoscraper@gmail.com"
         pyperclip.copy(correo)
     # Este metodo vuelve a la ventana inicial
     def volver(self):
