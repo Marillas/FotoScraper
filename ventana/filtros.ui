@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FotoScraperFiltros</class>
+ <widget class="QWidget" name="FotoScraperFiltros">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>698</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame_morado_barra">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+background-color: rgb(48, 58, 178);
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="logo_fotoscraper">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>501</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(48, 58, 178);
+	border: 0px
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../fotoscraper.png</normaloff>../fotoscraper.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>400</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_fondo">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>260</y>
+      <width>851</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #F4F4FB;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_tiempo">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>541</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TIEMPO ESTIMADO DE ESPERA:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="boton_volver_filtros">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>190</y>
+       <width>291</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+       <pointsize>69</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: #E5E6E1;
+border-color: #A3A3A0;
+}
+QPushButton:hover{
+  background-color: #666664;
+  font-weight: 700;
+  text-shadow: 0 .0625rem 0 #fff;
+  color: rgb(255,255,255)
+}</string>
+     </property>
+     <property name="text">
+      <string>VOLVER</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_inmuebles">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>541</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>INMUEBLES ENCONTRADOS:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="boton_progreso_scrapear">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>190</y>
+       <width>291</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+       <pointsize>69</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: #E5E6E1;
+border-color: #A3A3A0;
+}
+QPushButton:hover{
+  background-color: #666664;
+  font-weight: 700;
+  text-shadow: 0 .0625rem 0 #fff;
+  color: rgb(255,255,255)
+}</string>
+     </property>
+     <property name="text">
+      <string>SCRAPEAR</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_error">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>140</y>
+       <width>541</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red
+</string>
+     </property>
+     <property name="text">
+      <string>NO SE HA ENCONTRADO NINGUN INMUBLE CON ESAS CARACTERISTICAS</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_blanco">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>0</y>
+      <width>501</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #F4F4FB;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_provincia_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>391</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_provincia_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Provincia</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_comprar_alquilar">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>401</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #FFFFFF;
+border-color: #A3A3A0;</string>
+     </property>
+     <property name="title">
+      <string>¿Qué quieres hacer?</string>
+     </property>
+     <widget class="QRadioButton" name="radioButton_comprar_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Comprar</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_alquilar_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>30</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Alquilar</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_banos">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>370</y>
+       <width>401</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #FFFFFF;
+border-color: #A3A3A0;</string>
+     </property>
+     <property name="title">
+      <string>Baños</string>
+     </property>
+     <widget class="QRadioButton" name="radioButton_banos_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>30</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_banos_1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_banos_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_habitacion">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>401</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #FFFFFF;
+border-color: #A3A3A0;</string>
+     </property>
+     <property name="title">
+      <string>Habitaciones</string>
+     </property>
+     <widget class="QRadioButton" name="radioButton_habitaciones_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_habitaciones_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>30</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_habitaciones_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_habitaciones_1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="boton_soporte">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>490</y>
+       <width>401</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+       <pointsize>69</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: #E5E6E1;
+border-color: #A3A3A0;
+}
+QPushButton:hover{
+  background-color: #666664;
+  font-weight: 700;
+  text-shadow: 0 .0625rem 0 #fff;
+  color: rgb(255,255,255)
+}</string>
+     </property>
+     <property name="text">
+      <string>SOPORTE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_portapapeles">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>650</y>
+       <width>381</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black</string>
+     </property>
+     <property name="text">
+      <string>Se ha copiado al portapapeles nuestro correo</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_morado">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>501</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background-color: rgb(48, 58, 178);
+}
+
+
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="boton_fotosraper">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>501</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgb(48, 58, 178);
+	border: 0px
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../fotoscraper.png</normaloff>../fotoscraper.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>200</width>
+       <height>400</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_csv">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>420</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white</string>
+     </property>
+     <property name="text">
+      <string>Nombre del archivo CSV</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_csv">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>460</y>
+       <width>391</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="boton_scrapear">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>490</y>
+       <width>391</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Fixedsys</family>
+       <pointsize>69</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: #E5E6E1;
+border-color: #A3A3A0;
+}
+QPushButton:hover{
+  background-color: #666664;
+  font-weight: 700;
+  text-shadow: 0 .0625rem 0 #fff;
+  color: rgb(255,255,255)
+}</string>
+     </property>
+     <property name="text">
+      <string>SCRAPEAR</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>frame_fondo</zorder>
+   <zorder>logo_fotoscraper</zorder>
+   <zorder>frame_blanco</zorder>
+   <zorder>frame_morado</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
